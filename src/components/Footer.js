@@ -20,13 +20,15 @@ export default class Footer extends Component {
     return (
       <p>
         Show:
-        {' '}
-        {this.renderFilter('SHOW_ALL', 'All')}
-        {', '}
-        {this.renderFilter('SHOW_COMPLETED', 'Completed')}
-        {', '}
-        {this.renderFilter('SHOW_ACTIVE', 'Active')}
-        .
+        <button> {' '}
+          {this.renderFilter('SHOW_ALL', 'All')}
+        </button>
+        <button>{' '}
+          {this.renderFilter('SHOW_COMPLETED', 'Completed')}
+        </button>
+        <button>{''}
+          {this.renderFilter('SHOW_ACTIVE', 'Active')}
+        </button>
       </p>
     )
   }

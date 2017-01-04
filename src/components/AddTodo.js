@@ -14,7 +14,7 @@ export default class AddTodo extends Component {
 
   handleClick(e) {
     const node = this.refs.input
-    const text = node.value.trim()
+    const text = node.value.trim()//去除空格
     this.props.onAddClick(text)
     node.value = ''
   }

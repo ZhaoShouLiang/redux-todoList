@@ -15,6 +15,7 @@ export default class Todo extends Component {
   }
 }
 
+//设置类型
 Todo.propTypes = {
   onClick: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
